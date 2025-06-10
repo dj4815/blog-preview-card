@@ -16,7 +16,7 @@ p {
 
 h2 {
   font-weight: 800;
-  font-size: 20px;
+  font-size: 22px;
   margin: 1rem 0;
 }
 
@@ -31,7 +31,7 @@ h2 {
 
 .card {
   width: 100%;
-  max-width: 320px;
+  max-width: 360px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -40,7 +40,7 @@ h2 {
   padding: 1.25rem;
   background-color: hsl(0, 0%, 100%);
   border-radius: 20px;
-  box-shadow: 10px 10px hsla(0, 0%, 7%, 1);
+  box-shadow: 8px 8px hsla(0, 0%, 7%, 1);
 }
 
 .content {
