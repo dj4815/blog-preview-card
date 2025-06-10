@@ -1,5 +1,11 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Figtree", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 p {
@@ -14,21 +20,24 @@ h2 {
 }
 
 .container {
+  padding: 2rem 1rem;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
   background-color: hsl(47, 88%, 63%);
 }
 
+
 .card {
-  width: 320px;
+  width: 100%;
+  max-width: 320px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   border: 2px solid black;
-  padding: 2rem;
+  padding: 1rem;
   background-color: hsl(0, 0%, 100%);
   border-radius: 20px;
   box-shadow: 10px 10px hsla(0, 0%, 7%, 1);
@@ -38,9 +47,10 @@ h2 {
   display: block;
 }
 
-.content img {
+.preview-image {
+  width: 100%;
   display: block;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   border-radius: 10px;
 }
 
@@ -64,18 +74,24 @@ h2 {
 }
 
 .author {
-    display: flex;
-    align-items: center;
-    font-weight: 800;
-    color: hsl(0, 0%, 7%);
-  }
-  
-  .author .avatar {
-    width: 32px;
-    height: 32px;
-    margin-right: 0.5rem;
-  }  
+  display: flex;
+  align-items: center;
+}
 
+.avatar {
+  width: 32px;
+  height: 32px;
+  margin-right: 0.5rem;
+  display: block;
+}
+
+.authorname {
+  margin: 0;
+  padding: 0;
+  font-weight: 800;
+  color: hsl(0, 0%, 7%);
+  font-size: 14px;
+}
 
 .attribution {
   font-size: 11px;
@@ -85,3 +101,6 @@ h2 {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+
+
